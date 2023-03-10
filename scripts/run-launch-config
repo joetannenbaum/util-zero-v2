@@ -1,0 +1,14 @@
+#!/usr/bin/env osascript -l JavaScript
+
+function run(argv) {
+    if (argv.length === 0) {
+        throw Error('No argument!');
+    }
+
+    const se = Application('System Events');
+
+    Application('Warp').activate();
+    se.keystroke('l', { using: ['command down', 'control down'] });
+    se.keystroke(argv[0]);
+    se.keyCode(36);
+}

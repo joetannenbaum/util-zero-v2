@@ -1,0 +1,69 @@
+{
+    "name": "laravel-zero/laravel-zero",
+    "description": "The Laravel Zero Framework.",
+    "keywords": ["framework", "laravel", "laravel zero", "console", "cli"],
+    "homepage": "https://laravel-zero.com",
+    "type": "project",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/laravel-zero/laravel-zero/issues",
+        "source": "https://github.com/laravel-zero/laravel-zero"
+    },
+    "authors": [
+        {
+            "name": "Nuno Maduro",
+            "email": "enunomaduro@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "based/momentum-trail": "^0.2.1",
+        "composer/semver": "^3.3",
+        "graham-campbell/digitalocean": "^9.0",
+        "guzzlehttp/guzzle": "^7.4",
+        "http-interop/http-factory-guzzle": "^1.2",
+        "illuminate/database": "^9.0",
+        "illuminate/http": "^9.0",
+        "laravel-zero/framework": "^9.2",
+        "laravel/forge-sdk": "^3.13",
+        "laravel/jetstream": "^3.0",
+        "nunomaduro/termwind": "^1.14",
+        "predis/predis": "^2.1",
+        "psr/http-client": "^1.0",
+        "spatie/enum": "^3.13",
+        "spatie/laravel-data": "^3.1",
+        "spatie/laravel-ray": "^1.32",
+        "spatie/laravel-typescript-transformer": "^2.1",
+        "symfony/yaml": "^6.1",
+        "toin0u/digitalocean-v2": "^4.5"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.9.1",
+        "laravel/pint": "^1.2",
+        "mockery/mockery": "^1.4.4",
+        "pestphp/pest": "^1.21.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "bin": ["util"]
+}
